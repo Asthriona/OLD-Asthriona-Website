@@ -32,11 +32,11 @@ html {
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url('https://cdn.siriushd.net/site-bg.jpg');
+  background-image: url('/images/site-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 .me {
