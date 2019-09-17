@@ -1,0 +1,51 @@
+.banner {
+    display: block;
+    background-color: black;
+    background-image: url(https://cdn.asthriona.com/asthriokbd.jpg);
+    height: 100%;
+    margin-bottom: 50px;
+    padding: 0;
+}
+.body {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.title {
+    position: relative;
+    float: center;
+    text-align: center;
+}
+.ttext {
+    position: relative;
+    text-align: justify;
+}
+.comands {
+    text-align: center;
+    position: center;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
