@@ -64,10 +64,17 @@ html {
   display: block;
   text-align: center;
 }
+.waifuimg img {
+  width: 16%;
+}
 .nab {
   text-align: center;
   color: lightgray;
 }
+.nab a:link{ color:lightgray; } 
+.nab a:visited{ color:lightgray; } 
+.nab a:hover{ color:lightgray; } 
+.nab a:active{ color:lightgray}
 .social a:link {  
   color:white;
   -o-transition:color .2s ease-out, background 1s ease-in;
