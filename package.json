@@ -16,5 +16,8 @@
     "morgan": "~1.9.1",
     "storyblok-js-client": "^2.0.10",
     "storyblok-node-client": "^1.0.2"
+  },
+  "devDependencies": {
+    "create-pwa": "^2.2.0"
   }
 }

@@ -4,6 +4,11 @@ html {
 ::-webkit-scrollbar { 
   display: none; 
 }
+.void {
+  /*-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;*/
+  color: #000;
+}
 .tridi {
   position: absolute;
   top: 0%;
