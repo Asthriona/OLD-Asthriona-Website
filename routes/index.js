@@ -8,4 +8,7 @@ router.get('/', function(req, res, next) {
 router.get('/wp-admin', function(req, res, next) {
   res.render('wp-admin', { title: ' | You Got Jebaited!', layout: 'none' });
 });
+router.get('/ilisten', function(req, res, next) {
+  res.render('story', { title: ' | Ilisten', layout: 'layout'});
+});
 module.exports = router;
