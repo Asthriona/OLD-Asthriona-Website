@@ -8,6 +8,7 @@ var expressAMP = require('express-amp');
 
 var indexRouter = require('./routes/index');
 var blogRouter = require('./routes/blog');
+var tvRouter = require('./routes/tv');
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use(minify({
 
 app.use('/', indexRouter);
 app.use('/blog', blogRouter);
+app.use('/tv', tvRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
