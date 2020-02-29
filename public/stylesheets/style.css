@@ -75,12 +75,12 @@ html {
 }
 .nab {
   text-align: center;
-  color: lightgray;
+  color: rgba(0, 0, 0, 0.404);
 }
-.nab a:link{ color:lightgray; } 
-.nab a:visited{ color:lightgray; } 
-.nab a:hover{ color:lightgray; } 
-.nab a:active{ color:lightgray}
+.nab a:link{ color:rgba(0, 0, 0, 0.404); } 
+.nab a:visited{ color:rgba(0, 0, 0, 0.404); } 
+.nab a:hover{ color:rgba(0, 0, 0, 0.404); } 
+.nab a:active{ color:rgba(0, 0, 0, 0.404);}
 .social a:link {  
   color:white;
   -o-transition:color .2s ease-out, background 1s ease-in;
