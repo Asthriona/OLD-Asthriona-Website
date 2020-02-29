@@ -1,0 +1,23 @@
+
+.footBack{
+    color:#888;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    width:100%;
+    min-height: 50px;
+    margin-top: 25px;
+    position: absolute;
+}
+.fcontainer{
+    width:100%;
+    background: #232323;
+    padding:15px 10px 10px 10px;
+    box-sizing: border-box;
+    width: 100%!important;
+}
+.footBack a{
+    color:#d86100;
+    z-index: 3;
+}
