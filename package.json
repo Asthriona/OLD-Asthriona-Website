@@ -14,7 +14,7 @@
     "express-minify": "^1.0.0",
     "hbs": "^4.1.0",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
+    "morgan": "~1.10.0",
     "storyblok-js-client": "^2.0.10",
     "storyblok-node-client": "^1.0.2"
   },
