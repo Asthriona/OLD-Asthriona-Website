@@ -6,15 +6,16 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
+    "bootstrap": "^4.4.1",
+    "cookie-parser": "~1.4.5",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "~4.17.1",
     "express-amp": "^1.0.9",
     "express-minify": "^1.0.0",
-    "hbs": "^4.1.0",
-    "http-errors": "~1.7.3",
-    "morgan": "~1.9.1",
-    "storyblok-js-client": "^2.0.10",
+    "hbs": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "storyblok-js-client": "^2.0.12",
+    "morgan": "~1.10.0",
     "storyblok-node-client": "^1.0.2"
   },
   "devDependencies": {

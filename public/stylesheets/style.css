@@ -55,7 +55,7 @@ html {
 .masthead {
   height: 100vh;
   min-height: 500px;
-  /*background-image: url('/images/site-bg.jpg');*/
+  /*background-image: url('https://placewaifu.com/image/1920/1080?blur');*/
   background-image: url('https://cdn.asthriona.com/Nako_wallpaper.png');
   background-size: cover;
   background-position: center;
@@ -75,12 +75,12 @@ html {
 }
 .nab {
   text-align: center;
-  color: lightgray;
+  color: rgba(0, 0, 0, 0.404);
 }
-.nab a:link{ color:lightgray; } 
-.nab a:visited{ color:lightgray; } 
-.nab a:hover{ color:lightgray; } 
-.nab a:active{ color:lightgray}
+.nab a:link{ color:rgba(0, 0, 0, 0.404); } 
+.nab a:visited{ color:rgba(0, 0, 0, 0.404); } 
+.nab a:hover{ color:rgba(0, 0, 0, 0.404); } 
+.nab a:active{ color:rgba(0, 0, 0, 0.404);}
 .social a:link {  
   color:white;
   -o-transition:color .2s ease-out, background 1s ease-in;
@@ -182,3 +182,37 @@ iframe {
 .nav-link.nuxt-link-exact-active a {
   color: #06c4d1 !important;
 }
+.team {
+  position: relative;
+}
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff !important;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .title {
+    color: #000;
+  }
+  
+  .button:hover {
+    background-color: rgb(0, 0, 0);
+  }
