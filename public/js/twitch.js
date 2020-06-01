@@ -1,6 +1,6 @@
 var data = null;
 
-var streamer = "ragingravage"
+var streamer = "Asthriona"
 
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = false;
