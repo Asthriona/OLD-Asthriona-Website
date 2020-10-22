@@ -15,9 +15,7 @@
     "express-minify": "^1.0.0",
     "hbs": "^4.1.1",
     "http-errors": "^1.8.0",
-    "morgan": "~1.10.0",
-    "storyblok-js-client": "^2.0.12",
-    "storyblok-node-client": "^1.0.2"
+    "morgan": "~1.10.0"
   },
   "devDependencies": {
     "create-pwa": "^2.3.0"
