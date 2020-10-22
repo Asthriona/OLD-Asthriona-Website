@@ -54,4 +54,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+app.listen(1101, console.log("THAT ON! D:"))

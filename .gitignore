@@ -1,2 +1,4 @@
 node_modules/
 views/story.hbs
+
+.vercel
