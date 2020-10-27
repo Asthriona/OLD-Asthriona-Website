@@ -1,14 +1,14 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var minify = require('express-minify');
-var expressAMP = require('express-amp');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const minify = require('express-minify');
+const compression = require('compression')
+const expressAMP = require('express-amp');
+const Config = require('./config.json')
 
-var indexRouter = require('./routes/index');
-var blogRouter = require('./routes/blog');
-var tvRouter = require('./routes/tv');
+const indexRouter = require('./routes/index');
 
 var app = express();
 
@@ -19,24 +19,24 @@ app.use(expressAMP({
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(compression());
+app.use(minify());
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
-app.use(minify({
-  cache: false,
-  uglifyJsModule: null,
-  errorHandler: null,
-  jsMatch: /javascript/,
-  cssMatch: /css/,
-}));
 
-app.use('/', indexRouter);
-app.use('/blog', blogRouter);
-app.use('/tv', tvRouter);
+
+if(Config.maintenance == true){
+  app.get('*', (req,res)=>{
+    res.render('maintenance')
+  })
+}else{
+  app.use('/', indexRouter);
+}
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -54,4 +54,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(1101, console.log("THAT ON! D:"))
+app.listen(Config.port, console.log(`THAT ON! D: asthriona.com:${Config.port}`))
