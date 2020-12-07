@@ -47,7 +47,8 @@ html {
 .me,
 .wow,
 .what,
-.works {
+.works,
+.contact {
     margin-top: 100px;
     color: #ccc !important;
 }
