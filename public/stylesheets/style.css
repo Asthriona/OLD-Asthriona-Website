@@ -35,8 +35,8 @@ html {
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background-image: url('https://placewaifu.com/image/1920/1080?blur');
-    /*background-image: url('https://cdn.asthriona.com/Nako_wallpaper.png');*/
+    /*background-image: url('https://placewaifu.com/image/1920/1080?blur');*/
+    background-image: url('/images/site-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
