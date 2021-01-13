@@ -19,7 +19,7 @@ html {
     right: 50%;
     transform: translate(50%, -50%);
     text-transform: uppercase;
-    font-family: verdana;
+    font-family: 'VALORANT', verdana;
     font-size: 5.4em;
     font-weight: 700;
     color: #f5f5f5;

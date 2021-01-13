@@ -3,10 +3,13 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <h1 class="tridi">Asthriona</h1><br><br>
+                    <h1 class="tridi">
+                        <%= name %>
+                    </h1><br><br>
                     <div class="social ">
-                        <!--<h3 class="void">The void is my kingdom.</h3>-->
-                        <h3 class="void"><%= random[Math.round(Math.random()* random.length)] %></h3>
+                        <h3 class="void">
+                            <%= random[Math.round(Math.random()* random.length)] %>
+                        </h3>
                         <h3 class="tridi2">
                             <a href="https://twitter.com/Asthriona"><i class="fab fa-twitter"></i></a> &#x25cf; <a href="https://www.instagram.com/asthrionaa/"><i class="fab fa-instagram"></i></a> &#x25cf;
                             <a href="https://github.com/Asthriona"><i class="fab fa-github"></i></a> &#x25cf; <a href="https://www.instagram.com/tw_alinnaya/"><i class="fas fa-dragon"></i></a>
@@ -146,13 +149,11 @@
                         <label for="text">Your text</label>
                         <textarea id="text" name="text" placeholder="Tell me everything on your mind..." style="height:200px"></textarea>
 
-                        <input type="submit" value="Submit">
-                        <small>Please do not use this form to get any Yukiko's support, I will not reply on any mail sent here.<br>
-                    for Yukiko please use <a href="mailto:contact@yukiko.app"></a>contact@yukiko.app. Thanks!</small>
+                        <input type="submit" value="Submit"><br>
+                        <small>Please do not use this form to get any Yukiko's support, I will not reply on any mail sent here if its related to Yukiko.<br>
+                    for Yukiko support please use <a href="mailto:contact@yukiko.app">contact@yukiko.app</a>. Thanks!</small>
                     </form>
                 </div>
             </section>
-            <section class="credit">
-                <p class="text-center"><small class="nab"> </small></p>
-            </section>
             <%- include('partials/footer') %>
+                <small>debug: <%= number %></small>
