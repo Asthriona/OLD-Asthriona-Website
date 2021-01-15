@@ -19,7 +19,9 @@ router.get('/', function(req, res, next) {
     } else {
         var name = "ASTHRIONA"
     }
-    res.render('index', { layout: 'layout', random, name, number });
+    const bg = Math.round(Math.random() * 5) + 1
+
+    res.render('index', { layout: 'layout', random, name, number, bg });
 });
 router.get('/wp-admin', function(req, res, next) {
     res.render('wp-admin', { title: ' | You Got Jebaited!', layout: 'none' });

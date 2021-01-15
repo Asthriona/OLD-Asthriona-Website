@@ -16,6 +16,7 @@ html {
     /*-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;*/
     color: #000;
+    text-shadow: 1px 1px 0 rgb(179, 179, 179), -1px 1px 0 rgb(179, 179, 179), 1px -1px 0 rgb(179, 179, 179), -1px -1px 0 rgb(179, 179, 179);
 }
 
 .tridi {
@@ -26,7 +27,7 @@ html {
     text-transform: uppercase;
     font-family: 'logo', verdana;
     font-size: 5.4em;
-    font-weight: 700;
+    /* font-weight: 700; */
     color: #f5f5f5;
     text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
@@ -41,7 +42,7 @@ html {
     height: 100vh;
     min-height: 500px;
     /*background-image: url('https://placewaifu.com/image/1920/1080?blur');*/
-    background-image: url('/images/site-bg.jpg');
+    /* background-image: url('/images/site-bg.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
