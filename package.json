@@ -7,7 +7,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.6.0",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.5",
     "debug": "~2.6.9",
